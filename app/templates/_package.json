@@ -3,7 +3,6 @@
   "description": "<%= props.description %>",
   "version": "0.0.0",
   "dependencies": {},
-  "description": "<%= props.description %>",
   "author": "<%= props.author %>",
   "repository": "<%= repoUrl %>",
   "license": "<%= props.license %>",
