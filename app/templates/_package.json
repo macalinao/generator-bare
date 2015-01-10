@@ -1,5 +1,21 @@
 {
-  "name": "package",
+  "name": "<%= slugname %>",
+  "description": "<%= props.description %>",
   "version": "0.0.0",
-  "dependencies": {}
+  "dependencies": {},
+  "description": "<%= props.description %>",
+  "author": "<%= props.author %>",
+  "repository": "<%= repoUrl %>",
+  "license": "<%= props.license %>",
+  "keywords": [
+    "<%= slugname %>"<% for (var i = 0; i < keywords.length; i++) { %>,
+    "<%= keywords[i] %>"<% } %>
+  ],
+  "scripts": {
+    "test": "./node_modules/.bin/mocha -R spec"
+  },
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "mocha": "^2.1.0"
+  }
 }
