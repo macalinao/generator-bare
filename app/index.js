@@ -76,7 +76,8 @@ module.exports = yeoman.generators.Base.extend({
       store: true
     }, {
       name: 'keywords',
-      message: 'Key your keywords (comma to split)'
+      message: 'Key your keywords (comma to split)',
+      default: ''
     }];
 
     this.prompt(prompts, function(props) {
