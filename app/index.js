@@ -102,6 +102,7 @@ module.exports = yeoman.generators.Base.extend({
     this.template('README.md');
     this.template('index.js');
     this.template('test.js');
+    this.template('gitignore', '.gitignore');
     this.template('editorconfig', '.editorconfig');
     this.template('jshintrc', '.jshintrc');
     this.template('travis.yml', '.travis.yml');
