@@ -1,4 +1,5 @@
 'use strict';
+var _ = require('lodash');
 var yeoman = require('yeoman-generator');
 var npmName = require('npm-name');
 var chalk = require('chalk');
@@ -46,7 +47,7 @@ module.exports = yeoman.generators.Base.extend({
         return this.askForModuleName();
       }
 
-      this.slugname = this._.slugify(props.name);
+      this.slugname = _.slugify(props.name);
       this.safeSlugname = this.slugname.replace(/-+([a-zA-Z0-9])/g, function(g) {
         return g[1].toUpperCase();
       });
